@@ -4,15 +4,16 @@
 @brand-secondary: #E3BC28;
 @font-family-serif: "Vollkorn", serif;
 @font-family-base: @font-family-serif;
-@font-size-base: 24px;
+@font-size-base: 22px;
 
-@text-color: darken(@gray-darker, 10%);
+@text-color: @gray-dark;
 
 @navigation-font-family: "PT Sans", sans-serif;
 
 @headings-font-family: "PT Sans", sans-serif;
 @headings-font-weight: 700;
 @headings-line-height: 1.1;
+@headings-color: darken(@gray-darker, 10%);
 
 @border-radius-base: 0;
 @border-radius-large: 0;
@@ -81,7 +82,8 @@
       top: 2px;
       left: 2px;
       z-index: 3;
-      background: transparent;
+      background: #fff;
+      opacity: 0.6;
       color: @gray-light;
       .transition-transform(0.8s ease-in);
       &.show-nav {
@@ -123,13 +125,13 @@
   header {
     text-align: center;
     position: relative;
-    padding-top: 40px;
     img {
       &.img-responsive {
         .img-responsive(inline-block);
-         border-radius: 50%;
-        padding: 4px;
+        border-radius: 50%;
+        padding: 3px;
         background: #F2F3F7;
+        max-width: 75px;
       }
     }
     h1 {
