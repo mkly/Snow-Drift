@@ -1,0 +1,156 @@
+@import "build/bootstrap/less/variables.less";
+@import "build/bootstrap/less/mixins.less";
+
+@brand-secondary: #E3BC28;
+@font-family-serif: "Vollkorn", serif;
+@font-family-base: @font-family-serif;
+@font-size-base: 24px;
+
+@text-color: darken(@gray-darker, 10%);
+
+@navigation-font-family: "PT Sans", sans-serif;
+
+@headings-font-family: "PT Sans", sans-serif;
+@headings-font-weight: 700;
+@headings-line-height: 1.1;
+
+@border-radius-base: 0;
+@border-radius-large: 0;
+@border-radius-small: 0;
+
+@btn-default-bg: #BDB0A9;
+@btn-default-color: #302222;
+
+@input-border: #BDB0A9;
+
+@import "build/bootstrap/less/normalize.less";
+@import "build/bootstrap/less/print.less";
+
+@import "build/bootstrap/less/scaffolding.less";
+@import "build/bootstrap/less/type.less";
+@import "build/bootstrap/less/code.less";
+@import "build/bootstrap/less/grid.less";
+@import "build/bootstrap/less/tables.less";
+@import "build/bootstrap/less/forms.less";
+@import "build/bootstrap/less/buttons.less";
+
+
+.ccm-toolbar-visible {
+  #snow-drift-wrapper {
+    nav {
+      top: 49px;
+    }
+  }
+}
+
+#snow-drift-wrapper {
+  overflow: hidden;
+  nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    max-width: 300px;
+    z-index: 1;
+    > ul {
+      &.nav {
+        padding: 0;
+        margin: 0;
+        li {
+          list-style-type: none;
+        }
+        a {
+          text-decoration: none;
+          font-family: @navigation-font-family;
+          font-weight: 400;
+          display: inline-block;
+          width: 100%;
+          border-bottom: 1px solid #eee;
+          padding: 10px 30px;
+          &:hover {
+              border-bottom: 1px solid darken(#eee, 10%);
+          }
+        }
+      }
+    }
+  }
+
+  button {
+    &.snow-drift-nav-button {
+      position: fixed;
+      top: 2px;
+      left: 2px;
+      z-index: 3;
+      background: transparent;
+      color: @gray-light;
+      .transition-transform(0.8s ease-in);
+      &.show-nav {
+        .translate(250px, 0);
+        .transition-transform(0.35s ease-in);
+      }
+      &:focus {
+        outline: none;
+      }
+      &:active {
+        color: @brand-primary;
+        .box-shadow(none);
+      }
+    }
+
+  }
+
+  .snow-drift-body-wrapper {
+    width: 100%;
+    background: #fff url('images/snowycreek.jpg') top center no-repeat;
+    padding: 25px 3%;
+    z-index: 2;
+    position: relative;
+    .transition-transform(0.8s ease-in);
+    &.show-nav {
+      .translate(250px, 0);
+      .transition-transform(0.38s ease-out 0.1s);
+      border-left: 1px solid lighten(@brand-primary, 30%);
+    }
+  }
+
+  header,
+  main,
+  footer {
+    margin: 0 auto;
+    max-width: 800px;
+  }
+
+  header {
+    text-align: center;
+    position: relative;
+    padding-top: 40px;
+    img {
+      &.img-responsive {
+        .img-responsive(inline-block);
+         border-radius: 50%;
+        padding: 4px;
+        background: #F2F3F7;
+      }
+    }
+    h1 {
+        text-shadow: 0px 0px 3px rgba(255, 255, 255, 1);
+        margin-bottom: 60px;
+    }
+
+    .inline-list {
+      padding: 0;
+      margin: 20px 0;
+      ul {
+        padding: 0;
+        li {
+          padding: 0 10px;
+          display: inline-block;
+          img {
+            max-width: 50px;
+          }
+        }
+      }
+    }
+  }
+
+}

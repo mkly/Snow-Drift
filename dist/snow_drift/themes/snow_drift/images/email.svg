@@ -1,0 +1,39 @@
+	<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   version="1.1"
+   width="132"
+   height="132"
+   id="mail-icon-svg">
+  <defs
+     id="defs5250" />
+  <metadata
+     id="metadata5253">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+	<circle id="mail-icon-background" cy="65" cx="65" r="64" style="fill:#010110;fill-opacity:0.08;stroke:#010110;stroke-opacity:0.1;stroke-width:2"/>
+	<defs>
+		<filter id="mail-icon-blur">
+			<feGaussianBlur stdDeviation="1.8" />
+		</filter>
+	</defs>
+	<path
+		d="m 23.71875,32.46875 a 3.134535,3.134535 0 0 0 -3.125,3.125 l 0,58.25 a 3.134535,3.134535 0 0 0 3.125,3.125 l 83.71875,0 a 3.134535,3.134535 0 0 0 3.125,-3.125 l 0,-58.25 a 3.134535,3.134535 0 0 0 -3.125,-3.125 l -83.71875,0 z M 31.3125,38.75 99.5,38.75 66.375,65.1875 31.3125,38.75 z m 73,4.6875 0,47.28125 -77.46875,0 0,-47.0625 37.59375,28.375 2.03125,1.5625 L 68.5,72 104.3125,43.4375 z"
+		id="mail-icon-symbol"
+		style="fill:#000000;filter:url(#mail-icon-blur);opacity:0.3" />
+	<path
+		d="m 23.71875,32.46875 a 3.134535,3.134535 0 0 0 -3.125,3.125 l 0,58.25 a 3.134535,3.134535 0 0 0 3.125,3.125 l 83.71875,0 a 3.134535,3.134535 0 0 0 3.125,-3.125 l 0,-58.25 a 3.134535,3.134535 0 0 0 -3.125,-3.125 l -83.71875,0 z M 31.3125,38.75 99.5,38.75 66.375,65.1875 31.3125,38.75 z m 73,4.6875 0,47.28125 -77.46875,0 0,-47.0625 37.59375,28.375 2.03125,1.5625 L 68.5,72 104.3125,43.4375 z"
+		id="mail-icon-symbol"
+		style="fill:#ffffff" />
+</svg>
