@@ -36,14 +36,6 @@
 @import "build/bootstrap/less/buttons.less";
 
 
-.ccm-toolbar-visible {
-  #snow-drift-wrapper {
-    nav {
-      top: 49px;
-    }
-  }
-}
-
 #snow-drift-wrapper {
   overflow: hidden;
   nav {
@@ -155,4 +147,17 @@
     }
   }
 
+}
+
+.ccm-toolbar-visible {
+  #snow-drift-wrapper {
+    nav {
+      top: 49px;
+    }
+    button {
+      &.snow-drift-nav-button {
+        top: 52px;
+      }
+    }
+  }
 }
