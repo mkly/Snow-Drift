@@ -11,4 +11,5 @@ SyntaxHighlighter.autoloader(
     'js //cdnjs.cloudflare.com/ajax/libs/SyntaxHighlighter/3.0.83/scripts/shBrushJScript.min.js',
     'php //cdnjs.cloudflare.com/ajax/libs/SyntaxHighlighter/3.0.83/scripts/shBrushPhp.min.js'
 );
+SyntaxHighlighter.all();
 </script>
